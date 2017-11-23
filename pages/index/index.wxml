@@ -5,10 +5,32 @@
       <input type="text" placeholder="搜索话题，问题或人" placeholder-class="search-placeholder"/>
     </view>
     <view class="question">
-      <view></view>
+      <view class="question-icon">
+        <text class="iconfont icon-tiwen"></text>
+      </view>
+      <view class="question-title">
+          提问
+      </view>
     </view>
   </view>
   <view class="top-bd">
-    <view class="swiper-tab"></view>
+    <view class="swiper-tab">
+      <!--wx:for控制属性绑定一个数组,
+          wx:for-item指定数组当前元素的变量名,数组当前项的变量名默认为item
+          wx:for-index指定数组当前元素下标的变量名，数组当前项的下标变量名默认为index-->
+        <view class="swiper-tab-item {{currentNavtab==idx?'active':''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="clickTab">
+          {{itemName}}
+        </view>
+    </view>
   </view>
 </view>
+
+<!--可滚动视图区域-->
+<!--scroll-y="true"允许纵向滚动-->
+<scroll-view class="scroll-view" scroll-y="true" style="height:{{windowHeight}}px">
+  <swiper style="height:{{windowHeight}}px" current="{{currentNavtab}}" bindchange="swiperTab">
+    <swiper-item>111</swiper-item>
+    <swiper-item>222</swiper-item>
+    <swiper-item>333</swiper-item>
+  </swiper>
+</scroll-view>

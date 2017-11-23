@@ -44,6 +44,5 @@
       "iconPath":"images/burger.png",
       "selectedIconPath":"images/burger_focus.png"
     }]
-  },
-  "debug": true
+  }
 }

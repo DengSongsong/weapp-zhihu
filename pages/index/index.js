@@ -5,10 +5,11 @@ const app = getApp()
 Page({
   // 页面初始数据
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    // tab切换
+   navTab: ["动态","热门","发现"],
+  // 设备高度
+   windowHeight: 0,
+   currentNavtab: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,33 +17,31 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
+  onLoad: function (options) {
+    // 小程序来自微信API
+    // 硬件和软件系统的基本信息
+    wx.getSystemInfo({
+      success: (res) => {
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+          windowHeight: res.windowHeight
+        });
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    })
+  },
+  // 点击tab值，swiper发生变化
+  clickTab: function(e){
+    // console.log(e);
+    var index = e.target.dataset.idx;
+    this.setData({
+      currentNavtab: index
+    })
+  },
+  // 滑动swiper，tab值发生变化
+  swiperTab: function(e){
+    // console.log(e);
+    this.setData({
+      currentNavtab: e.detail.current
+    })
   },
   getUserInfo: function(e) {
     console.log(e)

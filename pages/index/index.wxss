@@ -7,6 +7,9 @@
 .top{
   width: 100%;
   height: 150rpx;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
   /*background-color: yellow;*/
 }
 .top .top-hd{
@@ -14,11 +17,13 @@
   height: 75rpx;
   margin-top: 10rpx;
   border-bottom: 2rpx solid #EBEBEB;
+  background: white;
   /*background-color: blueviolet;*/
 }
 .top .search{
-  width: 500rpx;
+  width: 580rpx;
   height: 60rpx;
+  background: white;
   /*background-color: darkblue;*/
 }
 .top .search input{
@@ -33,13 +38,31 @@
   font-size: 30rpx;
 }
 .top .question{
-  width: 150rpx;
+  width: 120rpx;
   height: 60rpx;
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*background-color: red;*/
 }
-
-
-
+.top .question-icon{
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  
+}
+.iconfont.icon-tiwen{
+  color: #0068C4;
+  font-weight: bold;
+}
+.top .question-title{
+  display: inline-block;
+  height: 60rpx; 
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #0068C4;
+}
 
 @font-face {font-family: "iconfont";
   src: url('../fonts/iconfont.eot?t=1511409605749'); /* IE9*/
@@ -61,3 +84,33 @@
 
 .icon-fangdajing:before { content: "\e64f"; }
 
+.top .top-bd{
+  width: 100%;
+  height: 74rpx;
+  background: white;
+  /*background-color: blue;*/
+}
+.top .swiper-tab{
+  width: 100%;
+  height: 74rpx;
+  line-height: 74rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #B4B4B4;
+}
+.swiper-tab .swiper-tab-item{
+  font-size: 30rpx;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+ 
+}
+.active{
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+.scroll-view{
+  margin-top: 160rpx;
+  
+}
