@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="top">
+  <view class="top-hd flex">
+    <view class="search">
+      <input type="text" placeholder="搜索话题，问题或人" placeholder-class="search-placeholder"/>
+    </view>
+    <view class="question">
+      <view></view>
+    </view>
+  </view>
+  <view class="top-bd">
+    <view class="swiper-tab"></view>
+  </view>
+</view>
