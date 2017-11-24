@@ -4,6 +4,7 @@
     <view class="search">
       <input type="text" placeholder="搜索话题，问题或人" placeholder-class="search-placeholder"/>
     </view>
+
     <view class="question">
       <view class="question-icon">
         <text class="iconfont icon-tiwen"></text>
@@ -27,10 +28,53 @@
 
 <!--可滚动视图区域-->
 <!--scroll-y="true"允许纵向滚动-->
-<scroll-view class="scroll-view" scroll-y="true" style="height:{{windowHeight}}px">
+<!--<scroll-view class="scroll-view" scroll-y="true" style="height:{{windowHeight}}px">-->
+  <!--滑块视图容器
+      current当前所在页面的index
+      bindchange current改变时会触发change事件，
+      event.detail= {current: current, source: source}-->
   <swiper style="height:{{windowHeight}}px" current="{{currentNavtab}}" bindchange="swiperTab">
-    <swiper-item>111</swiper-item>
+    <swiper-item>
+    <scroll-view class="scroll-view" scroll-y="true" style="height:{{windowHeight}}px">
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" >
+        <view  class="feed-item">
+          <view class="feed-source">
+            <a href="" class="head-topic">
+              <view class="avatar">
+                <image src="{{item.feed_source_img}}"></image>
+              </view>
+              <text>来自话题：{{item.topic}}</text>
+            </a>
+            <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+          </view>
+          <view class="feed-content">
+            <view class="question">
+              <a href="" class="question-link">
+                <text>{{item.question}}</text>
+              </a>
+            </view>
+            <view class="answer-body">
+              <view>
+                <text class="answer-txt">{{item.answer_ctnt}}</text>
+              </view>
+              <view class="answer-actions">
+                <view class="like dot">
+                  <a>{{item.good_num}}赞同 </a>
+                </view>
+                <view class="comments dot">
+                  <a>{{item.comment_num}} 评论 </a>
+                </view>
+                <view class="follow-it">
+                  <a>关注问题</a>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      </scroll-view>
+    </swiper-item>
     <swiper-item>222</swiper-item>
     <swiper-item>333</swiper-item>
   </swiper>
-</scroll-view>
+<!--</scroll-view>-->
