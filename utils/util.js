@@ -1,5 +1,6 @@
-import next from '../data/data_index.js';
-console.log(next);  
+import index from '../data/data_index.js';
+import index_next from '../data/data_index_next.js';
+console.log(index);  
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -42,7 +43,11 @@ function getData(url){
 }
 
 function getData2(){
-  return next;
+  return index;
+}
+function getNext(){
+  return index_next;
 }
 module.exports.getData = getData;
 module.exports.getData2 = getData2;
+module.exports.getNext = getNext;

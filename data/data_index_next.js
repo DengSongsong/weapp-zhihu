@@ -110,5 +110,5 @@ var next = {
     ]
 
 }
-
+// module.exports.next = next;
 export default next;

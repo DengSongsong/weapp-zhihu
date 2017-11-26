@@ -49,7 +49,7 @@
   padding: 10rpx 0 0 0;
   /*height: 10rpx;*/
   font-size: 24rpx;
-  line-height: 28rpx;
+  line-height: 38rpx;
   color: #5b5b5b;
 }
 .feed-item .feed-content .answer-actions{

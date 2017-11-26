@@ -35,7 +35,9 @@
       event.detail= {current: current, source: source}-->
   <swiper style="height:{{windowHeight}}px" current="{{currentNavtab}}" bindchange="swiperTab">
     <swiper-item>
-    <scroll-view class="scroll-view" scroll-y="true" style="height:{{windowHeight}}px">
+    <!--bindscrolltolower 滚动到底部
+        bindscrolltoupper 滚动到顶部-->
+    <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
       <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" >
         <view  class="feed-item">
           <view class="feed-source">
