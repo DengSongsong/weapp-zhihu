@@ -1,0 +1,77 @@
+/* pages/answer/answer.wxss */
+.container{
+    padding: 0;
+    /*font-size: 14rpx;*/
+    /*background: #F0F4F3;*/
+    color: #000;
+}
+.container .answer-hd{
+    width: 100%;
+    height: 100rpx;
+    padding-left: 5%;
+    border-top: 2rpx solid #E6E6E6;
+    border-bottom: 2rpx solid #E6E6E6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+.container .answer-hd .avatar{
+    width: 90rpx;
+    height: 90rpx;
+}
+.container .answer-hd .avatar image {
+    display: inline-block;
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 90rpx;
+}
+.container .answerer-name{
+    width: 170rpx;
+    height: 90rpx;
+    padding-left: 30rpx;
+    /*background: red;*/
+}
+.container .answerer-name text{
+    font-weight: 400;
+    line-height: 90rpx;
+    font-size: 36rpx;
+    text-align: center;
+}
+.answer-content{
+    padding: 30rpx 40rpx;
+    background: #ffffff;
+}
+.answer-content text{
+    font-size: 32rpx;
+    color: #454545;
+    line-height: 44rpx;
+}
+.answer-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 70rpx;
+    border-top: solid 1px #ebebeb;
+    background: #ffffff;
+    padding: 20rpx 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.answer-footer .operation-btn{
+    flex: 1;
+    text-align: center;
+}
+.answer-footer .operation-btn image{
+    display: block;
+    margin: 0 auto;
+    width: 50rpx;
+    height: 50rpx;
+}
+.answer-footer .operation-btn text{
+    display: block;
+    font-size: 24rpx;
+    color: #bebebe;
+}

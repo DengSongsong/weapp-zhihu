@@ -5,7 +5,8 @@
     "pages/discovery/discovery",
     "pages/notify/notify",
     "pages/chat/chat",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/answer/answer"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,31 +19,37 @@
     "color": "#626567",
     "selectedColor": "#2A8CE5",
     "backgroundColor": "#FBFBFB",
-    "list":[{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/index.png",
-      "selectedIconPath": "images/index_focus.png"
-    }, {
-      "pagePath": "pages/discovery/discovery",
-      "text": "发现",
-      "iconPath": "images/discovery.png",
-      "selectedIconPath": "images/discovery_focus.png"
-    },{
-      "pagePath" :"pages/notify/notify",
-      "text": "注意",
-      "iconPath": "images/ring.png",
-      "selectedIconPath": "images/ring_focus.png"
-    },{
-      "pagePath": "pages/chat/chat",
-      "text": "消息",
-      "iconPath": "images/chat.png",
-      "selectedIconPath":"images/chat_focus.png"
-    },{
-      "pagePath": "pages/more/more",
-      "text": "更多",
-      "iconPath":"images/burger.png",
-      "selectedIconPath":"images/burger_focus.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现",
+        "iconPath": "images/discovery.png",
+        "selectedIconPath": "images/discovery_focus.png"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "text": "注意",
+        "iconPath": "images/ring.png",
+        "selectedIconPath": "images/ring_focus.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "消息",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多",
+        "iconPath": "images/burger.png",
+        "selectedIconPath": "images/burger_focus.png"
+      }
+    ]
   }
 }

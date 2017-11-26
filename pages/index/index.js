@@ -37,6 +37,7 @@ Page({
     var feed = util.getData2();
     console.log(feed);
     var feed_data = feed.data;
+    console.log(feed_data);
     this.setData({
       feed: feed_data,
       feed_length: feed_data.length
@@ -76,9 +77,9 @@ Page({
       duration: 4000
     })
     var next = util.getNext();
-    console.log(next);
+    // console.log(next);
     var next_data = next.data;
-    console.log(next_data);
+    // console.log(next_data);
     // console.log(this.data);
     this.setData({
       feed: this.data.feed.concat(next_data),
@@ -122,8 +123,18 @@ Page({
       })
     },3000)
   },
+  bindItemTap: function(e){
+    console.log(e);
+    let answer_id = e.currentTarget.dataset.answerid;
+    console.log(answer_id);
+    console.log(`/pages/answer/answer?answer_id=${answer_id}`);
+    wx.navigateTo({
+      url: `/pages/answer/answer?answer_id=${answer_id}`
+    })
+
+  },
   getUserInfo: function(e) {
-    console.log(e)
+    // console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

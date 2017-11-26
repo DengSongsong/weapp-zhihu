@@ -56,7 +56,7 @@
               </a>
             </view>
             <view class="answer-body">
-              <view>
+              <view bindtap="bindItemTap" data-answerId="{{item.answer_id}}">
                 <text class="answer-txt">{{item.answer_ctnt}}</text>
               </view>
               <view class="answer-actions">
