@@ -23,11 +23,11 @@ Page({
     })
     // console.log(centity);
     this.setData({
-      centity: centity[0]
+      centity: centity
     });
     console.log(centity);
    wx.setNavigationBarTitle({
-      title:this.data.centity.question
+      title:this.data.centity[0].question
   })
 
 

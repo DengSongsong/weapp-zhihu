@@ -12,7 +12,7 @@
     </view>
     <view class="answer-content">
         <text>
-            难道不明白纸质书更贵啊！！！
+            <!--难道不明白纸质书更贵啊！！！
 
             若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。
 
@@ -22,13 +22,14 @@
 
             碎片时间阅读总不能天天背着一本书吧，那么占地方。
 
-            看到描述最后一段，感觉有骗答案的嫌疑
+            看到描述最后一段，感觉有骗答案的嫌疑-->
+            {{item.content}}
         </text>
     </view>
     <view class="answer-footer">
         <view class="operation-btn">
             <image src="../../images/good-bad.png"></image>
-            <text>赞同2.1k</text>
+            <text>赞同{{item.good_num}}</text>
         </view>
         <view class="operation-btn">
             <image src="../../images/heart2.png"></image>
@@ -40,7 +41,7 @@
         </view>
         <view class="operation-btn">
             <image src="../../images/comment.png"></image>
-            <text>评论232</text>
+            <text>评论{{item.comment_num}}</text>
         </view>
     </view>
     </block>
