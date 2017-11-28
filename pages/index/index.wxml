@@ -47,7 +47,10 @@
               </view>
               <text>来自话题：{{item.topic}}</text>
             </a>
-            <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+            <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+            <view bindtap="powerDrawer" data-statu="open">
+              <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+            </view>
           </view>
           <view class="feed-content">
             <view class="question">
@@ -71,6 +74,10 @@
                 </view>
               </view>
             </view>
+          </view>
+          <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+            <view class="drawer_shield">屏蔽这个问题</view>
+            <view class="drawe_report">举报</view>
           </view>
         </view>
       </block>

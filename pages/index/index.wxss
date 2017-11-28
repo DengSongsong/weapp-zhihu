@@ -9,7 +9,7 @@
   height: 150rpx;
   position: fixed;
   top: 0;
-  z-index: 9999;
+  /*z-index: 9999;*/
   /*background-color: yellow;*/
 }
 .top .top-hd{
@@ -17,8 +17,8 @@
   height: 75rpx;
   margin-top: 10rpx;
   border-bottom: 2rpx solid #EBEBEB;
-  background: white;
-  /*background-color: blueviolet;*/
+  /*background: white;*/
+  background-color: white;
 }
 .top .search{
   width: 580rpx;

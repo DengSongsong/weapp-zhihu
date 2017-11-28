@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import 'styles/weui.wxss';
 @import 'styles/question.wxss';
 @import 'styles/icon.wxss';
 .container {
