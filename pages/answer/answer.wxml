@@ -1,7 +1,8 @@
 <!--pages/answer/answer.wxml-->
 <view class="container">
+   
     <block wx:for="{{centity}}" wx:for-item="item">
-    <view class="answer-hd">
+    <view class="answer-hd {{flag==0?'hide':''}}">
         <view class="avatar">
             <!--<image src="../../images/icon1.jpeg"></image>-->
             <image src="{{item.feed_source_img}}"></image>
@@ -11,38 +12,45 @@
         </view>
     </view>
     <view class="answer-content">
-        <text>
-            <!--难道不明白纸质书更贵啊！！！
+        <scroll-view scroll-y="true" bindscrolltolower="lower" lower-threshold="100" bindscrolltoupper="upper" style="height:80vh;">
+             <text>
+                难道不明白纸质书更贵啊！！！
 
-            若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。
+                若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。
 
-            另外，用kindle看小说的怎么真心不懂了。题主不看小说么？难道题主拿来看教科书还是技术文档？还是题主觉得小说就是小时代内样的？（对小时代没偏见，尊重多样性）
+                另外，用kindle看小说的怎么真心不懂了。题主不看小说么？难道题主拿来看教科书还是技术文档？还是题主觉得小说就是小时代内样的？（对小时代没偏见，尊重多样性）
 
-            而且纸质书搬起来真心困难啊！当初毕业带不回来，忍痛卖了不少好桑心！
+                而且纸质书搬起来真心困难啊！当初毕业带不回来，忍痛卖了不少好桑心！
 
-            碎片时间阅读总不能天天背着一本书吧，那么占地方。
+                碎片时间阅读总不能天天背着一本书吧，那么占地方。
 
-            看到描述最后一段，感觉有骗答案的嫌疑-->
-            {{item.content}}
-        </text>
+                看到描述最后一段，感觉有骗答案的嫌疑
+                {{item.content}}
+            </text>
+        </scroll-view>
     </view>
-    <view class="answer-footer">
+    <view class="answer-footer {{flag==0?'hide':''}}">
         <view class="operation-btn">
             <image src="../../images/good-bad.png"></image>
-            <text>赞同{{item.good_num}}</text>
+            <!--<text class="iconfont icon-tiwen"></text>-->
+            <text class="iconfont-desc">赞同{{item.good_num}}</text>
+        </view>
+        <view class="operation-btn" bindtap="collecting">
+            <!--<image src="../../images/heart2.png"></image>-->
+            <text class="iconfont icon-aixin {{change==0?'changeColor1':''}}"></text>
+            <text class="iconfont-desc {{change==0?'changeColor1':''}}">感谢作者</text>
         </view>
         <view class="operation-btn">
-            <image src="../../images/heart2.png"></image>
-            <text>感谢作者</text>
+            <!--<image src="../../images/star2.png"></image>-->
+            <text class="iconfont icon-shoucang"></text>
+            <text class="iconfont-desc">收藏</text>
         </view>
         <view class="operation-btn">
-            <image src="../../images/star2.png"></image>
-            <text>收藏</text>
-        </view>
-        <view class="operation-btn">
-            <image src="../../images/comment.png"></image>
-            <text>评论{{item.comment_num}}</text>
+            <!--<image src="../../images/comment.png"></image>-->
+            <text class="iconfont icon-pinglun"></text>
+            <text class="iconfont-desc">评论{{item.comment_num}}</text>
         </view>
     </view>
     </block>
+     
 </view>

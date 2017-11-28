@@ -123,6 +123,7 @@ Page({
       })
     },3000)
   },
+  // 回答详情页面跳转
   bindItemTap: function(e){
     console.log(e);
     let answer_id = e.currentTarget.dataset.answerid;

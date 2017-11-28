@@ -7,6 +7,8 @@ Page({
    */
   data: {
     centity: [],
+    flag: 1,
+    change:1
   },
 
   /**
@@ -23,16 +25,74 @@ Page({
     })
     // console.log(centity);
     this.setData({
-      centity: centity
+      centity: centity,
+      
     });
     console.log(centity);
-   wx.setNavigationBarTitle({
-      title:this.data.centity[0].question
+    wx.setNavigationBarTitle({
+    title:this.data.centity[0].question
   })
-
-
   },
 
+  // 向下滚动 底部导航栏隐藏
+  lower: function(){
+    this.setData({
+      // flag: 0
+    })
+    // console.log("000");
+  },
+  // 向上滚动 底部导航栏显示
+  upper: function(){
+    this.setData({
+      // flag:1
+    })
+    // console.log("111");
+  },
+  // 点击收藏事件
+  collecting: function(){
+    console.log(this.data.change);
+    if(this.data.change == 1){
+      wx.showToast({
+      title: '已感谢',
+      image: '../../images/love_focus.png',
+      duration: 1000
+      });
+      this.setData({
+        change: 0
+      })
+    }else if(this.data.change == 0){
+      wx.showToast({
+      title: '已取消',
+      image: '../../images/love.png',
+      duration: 1000
+      });
+      this.setData({
+        change: 1
+      })
+    }
+   
+//     wx.showActionSheet({
+//   itemList: ['A', 'B', 'C'],
+//   success: function(res) {
+//     console.log(res.tapIndex)
+//   },
+//   fail: function(res) {
+//     console.log(res.errMsg)
+//   }
+// })
+//     wx.showModal({
+//   title: '提示',
+//   content: '这是一个模态弹窗',
+//   success: function(res) {
+//     if (res.confirm) {
+//       console.log('用户点击确定')
+//     } else if (res.cancel) {
+//       console.log('用户点击取消')
+//     }
+//   }
+// })
+    console.log("111");
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

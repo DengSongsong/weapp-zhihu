@@ -17,6 +17,9 @@
     align-items: center;
     background-color: white;
 }
+.hide{
+    display: none;
+}
 .container .answer-hd .avatar{
     width: 90rpx;
     height: 90rpx;
@@ -54,13 +57,14 @@
     bottom: 0;
     height: 70rpx;
     border-top: solid 1px #ebebeb;
-    background: #ffffff;
+    /*background: #ffffff;*/
     padding: 20rpx 40rpx;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .answer-footer .operation-btn{
+    color: #bebebe;
     flex: 1;
     text-align: center;
 }
@@ -72,6 +76,44 @@
 }
 .answer-footer .operation-btn text{
     display: block;
+    /*font-size: 24rpx;*/
+}
+.answer-footer .iconfont{
+    display: block;
+    margin: 0 auto;
+    width: 50rpx;
+    height: 50rpx;
+    
+}
+.iconfont.icon-aixin{
+    /*color: #0068C4;*/
+       /*color: #bebebe;*/
+    font-weight: bold;
+    font-size: 50rpx;
+}
+.iconfont.icon-shoucang{
+    /*color: #0068C4;*/
+       /*color: #bebebe;*/
+    font-weight: bold;
+    font-size: 50rpx;
+}
+.iconfont.icon-pinglun{
+    /*color: #0068C4;*/
+       /*color: #bebebe;*/
+    font-weight: bold;
+    font-size: 50rpx;
+}
+
+.answer-footer .iconfont-desc{
     font-size: 24rpx;
+    /*color: #bebebe;*/
+}
+.hide{
+    display: none;
+}
+.changeColor1{
+    color: blue;
+}
+.changeColor2{
     color: #bebebe;
 }
