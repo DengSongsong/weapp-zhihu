@@ -2,7 +2,7 @@
     /*width: 100%; */
      padding: 30rpx 30rpx 30rpx 30rpx;
      border-top: 20rpx solid #EBEBEB;
-     /*position: relative;*/
+     position: relative;
      
 }
 .feed-item .feed-source{
@@ -84,8 +84,8 @@
   height: 180rpx;
   border-radius: 20rpx; 
   background: #FAFAFA;
-  position: fixed;
-  /*position: absolute;*/
+  /*position: fixed;*/
+  position: absolute;
   top: 25%;
   z-index: 10001;
   overflow: hidden; 

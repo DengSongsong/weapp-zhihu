@@ -10,35 +10,94 @@ Page({
    navTab: ["动态","热门","发现"],
   // 设备高度
    windowHeight: 0,
+  //  swiper 滑块current值
    currentNavtab: 0,
+  //  数据源
    feed: [],
    feed_length: 0,
+  //  更多按钮 触发弹窗
    showModalStatus: false 
   },
+  // 弹窗触发事件
   powerDrawer: function (e) { 
-    // console.log(e);
-    var currentStatu = e.currentTarget.dataset.statu;  
-    this.util(currentStatu); 
-    console.log(currentStatu);
+    console.log(e);
+    // console.log(e.currentTarget.dataset.answerid);
+    // console.log(e.currentTarget.dataset.questionid);
+    console.log(this.data.feed);
+    let feed = this.data.feed;
+    let answer_id = e.currentTarget.dataset.answerid;
+    // let question_id = e.currentTarget.dataset.questionid;
+    let currentStatu = e.currentTarget.dataset.statu; 
+    console.log(111);
+    console.log(feed); 
+    for(let key of feed)  
+    {
+      if(key.answer_id === answer_id){
+        console.log(key.isSelected);
+        console.log("sss ");
+         key.isSelected = true;  
+      }
+    } 
+    console.log(feed);
+    this.setData({
+      feed:feed,  
+    });
+    // const centity = feed.filter((item) => {
+    //   return answer_id == item.answer_id
+    // });
+    // console.log(centity);
+    // console.log(centity[0].answer_id);
+    // let count = [];
+    // const name = feed.map(item =>{
+    //   // return item.answer_id;
+    //   return count.push(item.answer_id);
+    // });
+    // console.log(count);
+    // count.map((item2)=>{
+    //   if(answer_id == item2){
+        
+    //   }
+    // });
+    this.util(currentStatu);
+    // if(answer_id == centity[0].answer_id){
+      // this.util(currentStatu); 
+    // }
+   
+    // console.log(currentStatu);
   },
+  // 点击 弹窗关闭
+  hide : function(){
+    var feed = this.data.feed;
+    for(let key of feed){
+      key.isSelected = false;
+    }
+    this.setData({
+      feed:feed,
+      showModalStatus: false ,
+    });
+  },
+
+  // 更多按钮 弹窗
   util: function(currentStatu){
     /* 动画部分 */ 
     // 第1步：创建动画实例   
     var animation = wx.createAnimation({ 
       duration: 200,  //动画时长  
-      timingFunction: "linear", //线性  
+      timingFunction: "linear", //动画效果线性  
       delay: 0  //0则不延迟  
     });  
     // console.log(this.animation);
     // 第2步：这个动画实例赋给当前的动画实例  
     this.animation = animation;  
     // console.log(this);
-    // console.log(this.animation);
+    console.log(this.animation);
     // 第3步：执行第一组动画  
+    // 调用step()来表示一组动画完成
     animation.opacity(0).rotateX(-100).step();  
    
     // 第4步：导出动画对象赋给数据对象储存  
     this.setData({ 
+      // 动画实例的export()方法导出动画数据传递给组件的animation属性
       animationData: animation.export() 
     }) 
        
@@ -77,6 +136,8 @@ Page({
     })
   },
   onLoad: function (options) {
+
+    console.log(options);
     // 小程序来自微信API
     // 硬件和软件系统的基本信息
     wx.getSystemInfo({
