@@ -2,12 +2,6 @@
 @import 'styles/weui.wxss';
 @import 'styles/question.wxss';
 @import 'styles/icon.wxss';
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+@import 'styles/hot.wxss';
+@import 'styles/discovery.wxss';
+

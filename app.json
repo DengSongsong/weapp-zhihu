@@ -6,7 +6,8 @@
     "pages/notify/notify",
     "pages/chat/chat",
     "pages/more/more",
-    "pages/answer/answer"
+    "pages/answer/answer",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

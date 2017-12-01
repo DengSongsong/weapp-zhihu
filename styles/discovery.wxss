@@ -1,0 +1,12 @@
+.discovery-hd{
+    width: 100%;
+    /*height: */
+}
+.discovery-hd .activity{
+    width: 750rpx;
+    height: 375rpx;
+}
+.discovery-hd .activity image{
+    width: 750rpx;
+    height: 375rpx;
+}

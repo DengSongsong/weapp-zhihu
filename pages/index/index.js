@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 var util = require('../../utils/util.js');
-const app = getApp()
+const app = getApp();
 
 Page({
   // 页面初始数据
@@ -16,7 +16,23 @@ Page({
    feed: [],
    feed_length: 0,
   //  更多按钮 触发弹窗
-   showModalStatus: false 
+   showModalStatus: false ,
+   imgUrls: [
+      '../../images/24213.jpg',
+      '../../images/24280.jpg',
+      '../../images/1444983318907-_DSC1826.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+  },
+
+  search_page: function(){
+    wx.navigateTo({
+      url: '../search/search'
+    });
+    console.log("sss");
   },
   // 弹窗触发事件
   powerDrawer: function (e) { 
@@ -35,7 +51,7 @@ Page({
       if(key.answer_id === answer_id){
         console.log(key.isSelected);
         console.log("sss ");
-         key.isSelected = true;  
+        key.isSelected = true;  
       }
     } 
     console.log(feed);
@@ -136,7 +152,6 @@ Page({
     })
   },
   onLoad: function (options) {
-
     console.log(options);
     // 小程序来自微信API
     // 硬件和软件系统的基本信息
@@ -162,7 +177,7 @@ Page({
   },
   // 点击tab值，swiper发生变化
   clickTab: function(e){
-    // console.log(e);
+    console.log(e);
     var index = e.target.dataset.idx;
     this.setData({
       currentNavtab: index
@@ -170,7 +185,7 @@ Page({
   },
   // 滑动swiper，tab值发生变化
   swiperTab: function(e){
-    // console.log(e);
+    console.log(e);
     this.setData({
       currentNavtab: e.detail.current
     })
@@ -250,6 +265,28 @@ Page({
       url: `/pages/answer/answer?answer_id=${answer_id}`
     })
 
+  },
+  followQuestion: function(e){
+    console.log(e);
+    let question_id = e.currentTarget.dataset.questionid;
+    console.log(question_id);
+    let feed = this.data.feed;
+    console.log(feed);
+
+    for(let key of feed){
+      if(question_id == key.question_id){
+        console.log(key.question_id);
+        if(key.follow == '已关注'){
+          key.follow = '关注问题';
+        }else{
+          key.follow = '已关注';
+        }
+      }
+    }
+    this.setData({
+        feed: feed,
+    })
+    
   },
   getUserInfo: function(e) {
     // console.log(e)

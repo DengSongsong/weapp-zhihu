@@ -1,9 +1,12 @@
 <!--index.wxml-->
 <view class="top">
   <view class="top-hd flex">
-    <view class="search">
+    <!-- <view class="search" bindtap="search_page">
       <input type="text" placeholder="搜索话题，问题或人" placeholder-class="search-placeholder"/>
-    </view>
+    </view> -->
+     <navigator url='../search/search' open-type="redirect" class="search">
+        <input type="text" placeholder="搜索话题，问题或人" placeholder-class="search-placeholder"/>
+    </navigator> 
 
     <view class="question">
       <view class="question-icon">
@@ -69,10 +72,10 @@
                 <view class="comments dot">
                   <a>{{item.comment_num}} 评论 </a>
                 </view>
-                <view class="follow-it">
-                  <a>关注问题</a>
+                <view class="follow-it" bindtap="followQuestion" data-questionId="{{item.answer_id}}">
+                  <text>{{item.follow}}</text>
                 </view>
-              </view>
+              </view> 
             </view>
           </view>
           <view animation="{{animationData}}" data-answerId="{{item.answer_id}}" class="drawer_box" wx:if="{{showModalStatus&&item.isSelected}}">
@@ -83,7 +86,40 @@
       </block>
       </scroll-view>
     </swiper-item>
-    <swiper-item>222</swiper-item>
-    <swiper-item>333</swiper-item>
+    <swiper-item>
+      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+        <block>
+          <view class="hot-item">
+            <view class="hot-hd">
+              <view class="userInfo-avatar">
+                <image src=""></image>
+              </view>
+              <view class="userInfo-name">
+                <text>名字</text>
+              </view>
+            </view>
+            <view class="hot-bd">
+              <text class="hot-question">威少和哈登的差距是否越来越大？？</text>
+            </view>
+            <view class="hot-ft">
+              <text class="hot-answer">火箭傲视着西部群雄，德安东尼看着自己的宏伟蓝图，说不出的得意。他从来都是一个爱面子的人，他喜欢公开给球队制定一个又一个目标，常规赛65胜，防守联盟前三，以及每场五十次三分出手。</text>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+        <view class="discovery-hd">
+          <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image" width="355" height="155"></image>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </scroll-view>
+    </swiper-item>
   </swiper>
 <!--</scroll-view>-->

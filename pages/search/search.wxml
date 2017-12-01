@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <view class="search-hd">
+        <view class="search-hd__input">
+            <input type="text" placeholder="搜索知乎内容" placeholder-class="search-placeholder"/>
+        </view>
+        <view class="search-hd__cancel">
+            <!--<text>取消</text>-->
+            <navigator url='../index/index' open-type="switchTab" hover-class="none">取消</navigator>
+        </view>
+    </view>
+    <view class="search-bd">
+        <view class="search-bd__title">
+            <text>知乎热搜</text>
+        </view>
+        <view class="search-bd__content">
+            <view class="content-item" wx:for="{{searchContent}}">
+                <text>{{item}}</text>
+            </view>
+        </view>
+    </view>
+</view>

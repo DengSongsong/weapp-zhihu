@@ -83,6 +83,7 @@
     margin: 0 auto;
     width: 50rpx;
     height: 50rpx;
+    /*margin-top: -10rpx;*/
     
 }
 .iconfont.icon-aixin{
@@ -90,22 +91,26 @@
        /*color: #bebebe;*/
     font-weight: bold;
     font-size: 50rpx;
+    margin-top: -10rpx;
 }
 .iconfont.icon-shoucang{
     /*color: #0068C4;*/
        /*color: #bebebe;*/
     font-weight: bold;
     font-size: 50rpx;
+    margin-top: -10rpx;
 }
 .iconfont.icon-pinglun{
     /*color: #0068C4;*/
        /*color: #bebebe;*/
     font-weight: bold;
     font-size: 50rpx;
+    margin-top: -10rpx;
 }
 
 .answer-footer .iconfont-desc{
     font-size: 24rpx;
+    margin-top: 15rpx;
     /*color: #bebebe;*/
 }
 .hide{
