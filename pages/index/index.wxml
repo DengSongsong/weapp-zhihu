@@ -119,6 +119,45 @@
             </block>
           </swiper>
         </view>
+        <view class="discovery-bd">
+          <block wx:for="{{discoveryNavigator}}">
+            <navigator class="discovery-navigator">
+              <view class="navigator-image">
+                <image src="{{item.navigateImage}}"></image>
+              </view>
+              <view class="navigator-desc">
+                <text>{{item.navigateDesc}}</text>
+              </view>
+            </navigator>
+          </block>
+        </view>
+        <block>
+          <view class="discovery-ft">
+            <view class="userInfo">
+              <view class="userInfo-avatar">
+                <image src="../../images/icon9.jpeg"></image>
+              </view>
+              <view class="userInfo-content">
+                <view class="name-identity">
+                  <view class="userName">白宇</view>
+                  <view class="userIdentity">用户</view>
+                </view>
+                <view class="followNums">1k人关注</view>
+              </view>
+              <view class="follow">
+                <view class="follow-btn">+关注</view>
+              </view>
+            </view>
+            <view class="discovery-content">
+              <view class="question">
+                <text>你有哪些有趣的经历？</text>
+              </view>
+              <view class="answer-body">
+                <text>啊杀啥的开机速度酒啊后告诉大家啊黑色的十大十大科技时代在西门吹牛的</text>
+              </view>
+            </view>         
+          </view>
+        </block>
       </scroll-view>
     </swiper-item>
   </swiper>

@@ -2,9 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/discovery/discovery",
-    "pages/notify/notify",
-    "pages/chat/chat",
+    "pages/idea/idea",
+    "pages/market/market",
+    "pages/information/information",
     "pages/more/more",
     "pages/answer/answer",
     "pages/search/search"
@@ -28,19 +28,19 @@
         "selectedIconPath": "images/index_focus.png"
       },
       {
-        "pagePath": "pages/discovery/discovery",
-        "text": "发现",
+        "pagePath": "pages/idea/idea",
+        "text": "想法",
         "iconPath": "images/discovery.png",
         "selectedIconPath": "images/discovery_focus.png"
       },
       {
-        "pagePath": "pages/notify/notify",
-        "text": "注意",
+        "pagePath": "pages/market/market",
+        "text": "市场",
         "iconPath": "images/ring.png",
         "selectedIconPath": "images/ring_focus.png"
       },
       {
-        "pagePath": "pages/chat/chat",
+        "pagePath": "pages/information/information",
         "text": "消息",
         "iconPath": "images/chat.png",
         "selectedIconPath": "images/chat_focus.png"

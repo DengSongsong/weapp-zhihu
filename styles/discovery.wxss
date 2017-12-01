@@ -10,3 +10,117 @@
     width: 750rpx;
     height: 375rpx;
 }
+.discovery-bd{
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*background-color: yellow;*/
+}
+.discovery-bd .discovery-navigator{
+    /*width: 120rpx;*/
+    height: 150rpx;
+    margin-top: 20rpx;
+    /*background-color: red;*/
+}
+.discovery-bd .discovery-navigator .navigator-image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius:50%; 
+    background-color: blue;
+}
+.discovery-bd .discovery-navigator .navigator-image image{
+    display: inline-block;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius:50%; 
+}
+.discovery-bd .discovery-navigator .navigator-desc{
+    text-align: center;
+    font-size: 30rpx;
+}
+.discovery-ft{
+    width: 100%;
+    border-top: 10px solid #EBEBEB;
+}
+.discovery-ft .userInfo{
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+    /*background: blueviolet;*/
+}
+.discovery-ft .userInfo .userInfo-avatar{
+    display: inline-block;
+    width: 100rpx;
+    height: 100rpx;
+    /*border-radius: 60rpx;*/
+    /*background-color: red;*/
+}
+.discovery-ft .userInfo .userInfo-avatar image{
+    display: inline-block;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    /*top: 10rpx;*/
+    /*vertical-align: middle;*/
+}
+.discovery-ft .userInfo .userInfo-content{
+    width: 60%;
+    height: 100rpx;
+    /*background-color: green;*/
+}
+.discovery-ft .userInfo .userInfo-content .name-identity{
+    width: 100%;
+    height: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*background-color: salmon;*/
+}
+.discovery-ft .name-identity .userName{
+    font-weight: 600;
+}
+.discovery-ft .name-identity .userIdentity{
+    width: 80rpx;
+    height: 40rpx;
+    font-size: 26rpx;
+    background-color: #F6F6F6;
+    border-radius: 10rpx;
+    margin-left: 15rpx;
+    color: #9D9D9D;
+    text-align: center;
+    margin-top: 10rpx;
+}
+.discovery-ft .followNums{
+    font-size: 32rpx;
+    color: #9D9D9D;
+}
+.discovery-ft .userInfo .follow{
+    width: 20%;
+    height: 70rpx;
+    border-radius: 10rpx;
+    background-color: #0068C4;
+}
+.discovery-ft .userInfo .follow .follow-btn{
+    text-align: center;
+    color: white;
+    line-height: 70rpx;
+}
+.discovery-ft .discovery-content{
+    /*width: 100%;*/
+    height: 140rpx;
+    padding: 30rpx;
+    /*background: yellow;*/
+}
+.discovery-ft .discovery-content .question{
+    font-weight: 600;
+}
+.discovery-ft .discovery-content .answer-body{
+    font-size: 32rpx;
+    color: #9C9C9C;
+}

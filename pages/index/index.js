@@ -26,6 +26,28 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
+    discoveryNavigator: [
+      {
+        'navigateImage': '../../images/index_focus.png',
+        'navigateDesc':'回答'
+      },
+      {
+        'navigateImage': '../../images/index_focus.png',
+        'navigateDesc':'视频'
+      },
+      {
+        'navigateImage': '../../images/index_focus.png',
+        'navigateDesc':'专栏'
+      },
+      {
+        'navigateImage': '../../images/index_focus.png',
+        'navigateDesc':'收藏夹'
+      },
+      {
+        'navigateImage': '../../images/index_focus.png',
+        'navigateDesc':'圆桌'
+      }
+    ]
   },
 
   search_page: function(){
