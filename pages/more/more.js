@@ -5,7 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    personalInfo:{
+      first: [{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的创作'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的收藏'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的关注'
+      }],
+      second: [{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '已购内容'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的书架'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的付费咨询'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的余额'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '我的礼券'
+      }],
+      third: [{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '最近浏览'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '夜间模式'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '反馈帮助中心'
+      },{
+        'icon': '../../images/icon9.jpeg',
+        'desc': '设置'
+      }]
+    }
   },
 
   /**

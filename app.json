@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/more/more",
     "pages/index/index",
     "pages/logs/logs",
     "pages/idea/idea",
     "pages/market/market",
     "pages/information/information",
-    "pages/more/more",
     "pages/answer/answer",
     "pages/search/search"
   ],

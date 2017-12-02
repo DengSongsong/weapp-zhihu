@@ -1,1 +1,60 @@
 /* pages/more/more.wxss */
+.container{
+    width: 100%;
+
+}
+.container .weui-cells{
+    margin-top: 0;
+}
+/*.container .weui-cells.personalInfo{
+    border-top: 30rpx solid #CDCDCD;
+}*/
+.container .personalInfo .weui-cell__hd image{
+    display: inline-block;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.container .personalInfo .personalInfo-content{
+    margin-left: 20rpx;
+}
+.container .personalInfo-name{
+    font-size: 36rpx;
+}
+.container .personalInfo-edit{
+    font-size: 30rpx;
+    color: #CDCDCD;
+}
+.weui-cell__ft:after{
+    content: " ";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+    margin-right: 25rpx;
+}
+.container .info-list .weui-cells{
+    border-top: 30rpx solid #EBEBEB; 
+}
+.container .info-list .weui-cell.weui-cell_access{
+    height: 60rpx;
+}
+.container .info-list image{
+    display: inline-block;
+    width: 80rpx;
+    height: 80rpx;
+    /*border-radius: 50%;*/
+}
+.container .info-list .weui-cell__bd{
+    margin-left: 30rpx;
+}
