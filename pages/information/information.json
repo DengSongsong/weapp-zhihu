@@ -1,1 +1,5 @@
-{}
+{
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "消息",
+    "navigationBarTextStyle": "black"
+}

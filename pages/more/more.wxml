@@ -56,12 +56,13 @@
                 </view>
             </block>
         </view>
-         <view class="weui-cell weui-cell_access">
+        <view class="weui-cells">
+        <view class="weui-cell weui-cell_access">
                     <view class="weui-cell__hd">
                         <image src="{{item.icon}}"></image>
                     </view>
                     <view class="weui-cell__bd">
-                        夜间模式
+                       <text>夜间模式</text> 
                     </view>
                     <view class="weui-cell__ft">
                         <label for="switchCP" class="weui-switch-cp">
@@ -69,6 +70,7 @@
                             <div class="weui-switch-cp__box"></div>
                         </label>
                     </view>
+        </view>
         </view>
     </view>
 </view>

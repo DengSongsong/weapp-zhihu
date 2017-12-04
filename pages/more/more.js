@@ -1,4 +1,5 @@
 // pages/more/more.js
+const app = getApp();
 Page({
 
   /**
@@ -52,8 +53,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options);
+    // this.getUserInfo();
   },
+  // getUserInfo: function(e) {
+  //   console.log(e)
+  //   app.globalData.userInfo = e.detail.userInfo
+  //   this.setData({
+  //     userInfo: e.detail.userInfo,
+  //     hasUserInfo: true
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

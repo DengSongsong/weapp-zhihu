@@ -1,0 +1,106 @@
+/* pages/questionDetail/quetionDetail.wxss */
+.container{
+    width: 100%;
+}
+.flex-wrp{
+  display: flex;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
+.container .question-wrp{
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #bebebe;
+}
+.container .question-item{
+    /*width: 710rpx;*/
+    padding: 10rpx 20rpx 10rpx;
+    border-top: 1px solid #bebebe;
+    background: #fff;
+}
+.container .question-item .que-tag{
+    height: 80rpx;
+    border-bottom: 1px solid #bebebe;
+}
+.container .question-item .que-tag .tag{
+    height: 28rpx;
+    padding: 15rpx 20rpx;
+    border-radius: 10rpx;
+    margin: 0 10rpx;
+    background: #F6F6F6;
+    color: #898989;
+    font-size: 28rpx;
+    vertical-align: middle;
+}
+.container .question-item .que-title{
+    padding: 20rpx 20rpx 30rpx;
+    font-size: 38rpx;
+    font-weight: 600;
+}
+.container .question-item .que-content{
+    padding: 0 20rpx;
+    font-size: 30rpx;
+}
+.container .question-item .que-follow{
+    margin: 20rpx;
+    height: 68rpx;
+}
+.container .question-item .que-follow view{
+    display: inline-block;
+    margin: 0 40rpx 0 0;
+}
+.container .question-item .que-follow .left{
+    float: left;
+    padding: 10rpx 0;
+}
+.question-item .que-follow .left text{
+    color: #AFAFAF;
+    height: 50rpx;
+    vertical-align: middle;
+    padding: 18rpx 0;
+    font-size: 28rpx;
+}
+.question-item .que-follow .right{
+    float: right;
+    padding: 20rpx 55rpx;
+    color: #ffffff;
+    background: #0084FF;
+    border-radius: 6px;
+    font-size: 26rpx;
+    margin: 0;
+}
+.container .que-operate{
+    /*width: 750rpx;*/
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+    color: #889091;
+    vertical-align: middle;
+    background: #ffffff;
+}
+.que-operate .flex-item{
+    padding: 20rpx 0;
+    font-size: 26rpx;
+}
+.que-operate .invite{
+    border-right: solid 2px #ebebeb;
+}
+.que-operate image{
+    width: 50rpx;
+    height: 50rpx;
+    vertical-align: middle;
+    margin: 0 20rpx 0 0;
+}
+.container .questionDetail-bd{
+    padding: 0 20rpx;
+    height: 80rpx;
+    background: #EBEBEB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.questionDetail-bd .answerNum,.questionDetail-bd .order{
+    font-size: 26rpx;
+    color: #889091;
+}

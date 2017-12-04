@@ -1,13 +1,15 @@
 {
-  "pages": [
-    "pages/more/more",
+  "pages": [ 
     "pages/index/index",
     "pages/logs/logs",
     "pages/idea/idea",
     "pages/market/market",
     "pages/information/information",
+    "pages/more/more",
     "pages/answer/answer",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/comment/comment",
+    "pages/questionDetail/questionDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

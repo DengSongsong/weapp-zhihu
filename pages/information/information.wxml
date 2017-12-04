@@ -1,2 +1,34 @@
 <!--pages/chat/chat.wxml-->
-<text>pages/chat/chat.wxml</text>
+<view class="container">
+    <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+        <view class="weui-cells personalInfo">
+            <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__hd">
+                    <image src="../../images/icon9.jpeg"></image>
+                </view>
+                <view class="weui-cell__bd personalInfo-content">
+                    <view class="personalInfo-name">
+                        <text>私信</text>
+                    </view>
+                    <view class="personalInfo-edit">
+                        <text>还没有收到私信</text>
+                    </view>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+        <view class="info-list">
+            <text>通知列表</text>
+        </view>
+        <view class="info-ft">
+            <view class="backgruond-font">
+                <text class="bigFont">还没收到通知</text>
+                <text class="smallFont">
+                    您获得的赞同、赞与感谢、评论；您关
+                    注的问题、专栏更新等动态会显示在这
+                    里
+                </text>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -22,7 +22,7 @@
       <!--wx:for控制属性绑定一个数组,
           wx:for-item指定数组当前元素的变量名,数组当前项的变量名默认为item
           wx:for-index指定数组当前元素下标的变量名，数组当前项的下标变量名默认为index-->
-        <view class="swiper-tab-item {{currentNavtab==idx?'active':''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="clickTab">
+        <view class="swiper-tab-item {{currentNavtab==idx?'active':''}}" wx:for="{{navTab}}" wx:key="idx" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="clickTab">
           {{itemName}}
         </view>
     </view>
@@ -41,7 +41,7 @@
     <!--bindscrolltolower 滚动到底部
         bindscrolltoupper 滚动到顶部-->
     <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
-      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" >
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" data-idx="{{idx}}" >
         <view  class="feed-item">
           <view class="feed-source">
             <a href="" class="head-topic">
@@ -56,12 +56,14 @@
             </view>
           </view>
           <view class="feed-content">
-            <view class="question">
+            <!--问题详情跳转-->
+            <view class="question" bindtap="questionDetailTap" data-questionId="{{item.question_id}}">
               <a href="" class="question-link">
                 <text>{{item.question}}</text>
               </a>
             </view>
             <view class="answer-body">
+              <!--回答详情跳转-->
               <view bindtap="bindItemTap" data-answerId="{{item.answer_id}}">
                 <text class="answer-txt">{{item.answer_ctnt}}</text>
               </view>
@@ -69,7 +71,8 @@
                 <view class="like dot">
                   <a>{{item.good_num}}赞同 </a>
                 </view>
-                <view class="comments dot">
+                <!--评论页面跳转-->
+                <view class="comments dot" bindtap="commentTap" data-questionId="{{item.question_id}}">
                   <a>{{item.comment_num}} 评论 </a>
                 </view>
                 <view class="follow-it" bindtap="followQuestion" data-questionId="{{item.answer_id}}">
@@ -87,32 +90,34 @@
       </scroll-view>
     </swiper-item>
     <swiper-item>
-      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
-        <block>
+      <!--热门-->
+      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="" bindscrolltoupper="" style="height:{{windowHeight}}px">
+        <block wx:for="{{hot}}" wx:key="index">
           <view class="hot-item">
             <view class="hot-hd">
               <view class="userInfo-avatar">
-                <image src=""></image>
+                <image src="{{item.feed_source_img}}"></image>
               </view>
               <view class="userInfo-name">
-                <text>名字</text>
+                <text>名字{{item.feed_source_name}}</text>
               </view>
             </view>
             <view class="hot-bd">
-              <text class="hot-question">威少和哈登的差距是否越来越大？？</text>
+              <text class="hot-question">{{item.question}}</text>
             </view>
             <view class="hot-ft">
-              <text class="hot-answer">火箭傲视着西部群雄，德安东尼看着自己的宏伟蓝图，说不出的得意。他从来都是一个爱面子的人，他喜欢公开给球队制定一个又一个目标，常规赛65胜，防守联盟前三，以及每场五十次三分出手。</text>
+              <text class="hot-answer">{{item.answer_ctnt}}</text>
             </view>
           </view>
         </block>
       </scroll-view>
     </swiper-item>
     <swiper-item>
-      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+      <!--发现-->
+      <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="" bindscrolltoupper="" style="height:{{windowHeight}}px">
         <view class="discovery-hd">
           <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-            <block wx:for="{{imgUrls}}">
+            <block wx:for="{{imgUrls}}" wx:key="index">
               <swiper-item>
                 <image src="{{item}}" class="slide-image" width="355" height="155"></image>
               </swiper-item>
@@ -120,7 +125,7 @@
           </swiper>
         </view>
         <view class="discovery-bd">
-          <block wx:for="{{discoveryNavigator}}">
+          <block wx:for="{{discoveryNavigator}}" wx:key="index">
             <navigator class="discovery-navigator">
               <view class="navigator-image">
                 <image src="{{item.navigateImage}}"></image>
@@ -131,18 +136,18 @@
             </navigator>
           </block>
         </view>
-        <block>
+        <block wx:for="{{discovery}}" wx:key="index">
           <view class="discovery-ft">
             <view class="userInfo">
               <view class="userInfo-avatar">
-                <image src="../../images/icon9.jpeg"></image>
+                <image src="{{item.feed_source_img}}"></image>
               </view>
               <view class="userInfo-content">
                 <view class="name-identity">
-                  <view class="userName">白宇</view>
-                  <view class="userIdentity">用户</view>
+                  <view class="userName">{{item.feed_source_name}}</view>
+                  <view class="userIdentity">{{item.type}}</view>
                 </view>
-                <view class="followNums">1k人关注</view>
+                <view class="followNums">{{item.followed}}人关注</view>
               </view>
               <view class="follow">
                 <view class="follow-btn">+关注</view>
@@ -150,10 +155,10 @@
             </view>
             <view class="discovery-content">
               <view class="question">
-                <text>你有哪些有趣的经历？</text>
+                <text>{{item.question}}</text>
               </view>
               <view class="answer-body">
-                <text>啊杀啥的开机速度酒啊后告诉大家啊黑色的十大十大科技时代在西门吹牛的</text>
+                <text>{{item.answer_ctnt}}</text>
               </view>
             </view>         
           </view>

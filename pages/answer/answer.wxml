@@ -1,7 +1,7 @@
 <!--pages/answer/answer.wxml-->
 <view class="container">
    
-    <block wx:for="{{centity}}" wx:for-item="item">
+    <block wx:for="{{centity}}" wx:for-item="item" wx:key="index">
     <view class="answer-hd {{flag==0?'hide':''}}">
         <view class="avatar">
             <!--<image src="../../images/icon1.jpeg"></image>-->

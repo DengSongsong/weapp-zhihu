@@ -1,6 +1,7 @@
 import index from '../data/data_index.js';
 import index_next from '../data/data_index_next.js';
 import answer from '../data/data_answer.js';
+import questionDetail from '../data/data_questionDetail.js';
 console.log(index);  
 const formatTime = date => {
   const year = date.getFullYear()
@@ -52,9 +53,13 @@ function getNext(){
 function getAnswer(){
   return answer;
 }
+function getQuestionDetail(){
+  return questionDetail;
+}
 module.exports.getData = getData;
 module.exports.getData2 = getData2;
 module.exports.getNext = getNext;
 module.exports.getAnswer = getAnswer;
+module.exports.getQuestionDetail = getQuestionDetail;
 
 // export default getAnswer;

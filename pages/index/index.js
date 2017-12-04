@@ -15,6 +15,8 @@ Page({
   //  数据源
    feed: [],
    feed_length: 0,
+   hot: [],
+   discovery: [],
   //  更多按钮 触发弹窗
    showModalStatus: false ,
    imgUrls: [
@@ -192,9 +194,14 @@ Page({
     console.log(feed);
     var feed_data = feed.data;
     console.log(feed_data);
+    var hot_data = feed.hot;
+    console.log(hot_data);
+    var discovery_data = feed.discovery;
     this.setData({
       feed: feed_data,
-      feed_length: feed_data.length
+      feed_length: feed_data.length,
+      hot: hot_data,
+      discovery: discovery_data
     });
   },
   // 点击tab值，swiper发生变化
@@ -287,6 +294,22 @@ Page({
       url: `/pages/answer/answer?answer_id=${answer_id}`
     })
 
+  },
+  questionDetailTap: function(e){
+    console.log(e);
+    let question_id = e.currentTarget.dataset.questionid;
+    console.log(question_id);
+    console.log(`/pages/questionDetail/questionDetail?question_id=${question_id}`);
+     wx.navigateTo({
+      url: `/pages/questionDetail/questionDetail?question_id=${question_id}`
+    })
+  },
+  // 评论页面跳转
+  commentTap: function(e){
+    let question_id = e.currentTarget.dataset.questionid;
+     wx.navigateTo({
+      url: `/pages/comment/comment?question_id=${question_id}`
+    })
   },
   followQuestion: function(e){
     console.log(e);

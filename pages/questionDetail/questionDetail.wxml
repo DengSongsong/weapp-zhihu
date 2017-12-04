@@ -1,0 +1,97 @@
+<!--pages/questionDetail/quetionDetail.wxml-->
+<view class="container">
+  <block wx:for="{{questionDetail}}" wx:key="index">
+    <view class="question-wrp">
+        <view class="question-item">
+            <view class="que-tag">
+                <!--<text class="tag">阅读</text>
+                <text class="tag">电子书</text>
+                <text class="tag">Kindle</text>
+                <text class="tag">书籍</text>
+                <text class="tag">文学</text>-->
+                <block wx:for="{{item.key}}" wx:key="index">
+                  <text class="tag">{{item}}</text>
+                </block>
+            </view>
+            <view class="que-title">
+                {{item.question}}
+                <!--选择 Kindle 而不是纸质书的原因是  什么？-->
+
+            </view>
+            <view class="que-content">
+                {{item.content}}
+                <!--WEB前端*不靠谱天气预报员*想做代码小仙女-->
+            </view>
+            <view class="que-follow">
+                <view class="left">
+                    <view class="watch">
+                        <!--<image src="../../images/eye.png"></image>-->
+                        <text>{{item.good_num}}人关注</text>
+                    </view>
+                    <view class="comment">
+                        <!--<image src="../../images/comment2.png"></image>-->
+                        <text>{{item.comment_num}}条评论</text>
+                    </view>
+                </view>
+                <view class="right">
+                    +关注
+                </view>
+            </view>
+        </view>
+        <view class="que-operate flex-wrp">
+            <view class="invite flex-item">
+                <image src="../../images/invite.png"></image>
+                <text>邀请回答</text>
+            </view>
+            <view class="write flex-item">
+                <image src="../../images/write.png"></image>
+                <text>添加回答</text>
+            </view>
+        </view>
+    </view>
+    <view class="questionDetail-bd">
+        <view class="answerNum">3315个回答</view>
+        <view class="order">默认排序</view>
+    </view>
+    <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+      <block wx:for="{{item.comment}}" wx:key="index">
+        <view  class="feed-item">
+          <view class="feed-source">
+            <a href="" class="head-topic">
+              <view class="avatar">
+                <image src="{{item.feed_source_img}}"></image>
+              </view>
+              <text>{{item.feed_source_name}}</text>
+            </a>
+            <view bindtap="powerDrawer" data-statu="open" data-answerId="{{item.answer_id}}">
+              <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+            </view>
+          </view>
+          <view class="feed-content">
+            <view class="question">
+              <a href="" class="question-link">
+                <text>{{item.question}}</text>
+              </a>
+            </view>
+            <view class="answer-body">
+              <view bindtap="bindItemTap" data-answerId="{{item.answer_id}}">
+                <text class="answer-txt">{{item.content}}</text>
+              </view>
+              <view class="answer-actions">
+                <view class="like dot">
+                  <a>{{item.good_num}} 赞同 </a>
+                </view>
+                <view class="comments dot">
+                  <a>{{item.comment_num}} 评论 </a>
+                </view>
+                <view class="follow-it" bindtap="followQuestion" data-questionId="{{item.answer_id}}">
+                  <text>{{item.time}}</text>
+                </view>
+              </view> 
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </block>
+</view>

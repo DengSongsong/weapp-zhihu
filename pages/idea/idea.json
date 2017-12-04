@@ -1,3 +1,5 @@
 {
-    "navigationBarTitleText": "想法"
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "想法",
+    "navigationBarTextStyle": "black"
 }

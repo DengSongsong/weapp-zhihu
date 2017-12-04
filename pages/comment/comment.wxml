@@ -1,0 +1,75 @@
+<!--pages/comment/comment.wxml-->
+<view class="container">
+    <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
+        <view class="comment-hd">
+            <view class="selectedComment">
+                <text>精选评论</text>
+            </view>
+            <block>
+                <view class="user-comment">
+                    <view class="user-avatar">
+                        <image src="../../images/icon1.jpeg"></image>
+                    </view>
+                    <view class="comment-content">
+                        <view class="user-name">
+                            <text>白子</text>
+                        </view>
+                        <view class="answer-content">
+                            <text>江财江财江财江财江财江财江财江财江财江财江财江财江财江财江财</text>
+                        </view>
+                        <view class="comment-action">
+                            <view class="like dot">
+                                <text>点赞 48 </text>
+                            </view>
+                            <view class="reply dot">
+                                <text>回复</text>
+                            </view>
+                            <view class="time">
+                                <text>16/03/08</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="comment-bd">
+            <view class="ordinaryComment">
+                <text>评论</text>
+            </view>
+            <block>
+                <view class="user-comment">
+                    <view class="user-avatar">
+                        <image src="../../images/icon1.jpeg"></image>
+                    </view>
+                    <view class="comment-content">
+                        <view class="user-name">
+                            <text>白子</text>
+                        </view>
+                        <view class="answer-content">
+                            <text>江财江财江财江财江财江财江财江财江财江财江财江财江财江财江财</text>
+                        </view>
+                        <view class="comment-action">
+                            <view class="like dot">
+                                <text>48 点赞</text>
+                            </view>
+                            <view class="comment dot">
+                                <text>回复</text>
+                            </view>
+                            <view class="time">
+                                <text>16/03/08</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </scroll-view>
+    <view class="comment-ft">
+        <view class="commentInput">
+            <input type="text" placeholder="请输入评论" placeholder-class="placeholderClass" bindinput="" />
+        </view>
+        <view class="commentBtn">
+            <text bindtap="">发布</text>
+        </view>
+    </view>
+</view>
