@@ -338,6 +338,246 @@ var next = {
                     "comment_di": 1,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "1小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "2小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "3小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "4小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ],
+            "ordinaryComment": [
+                 {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ]
+        },
+        {
+            "question_id": 2,
+            "answer_id": 2,
+            "selectedComment": [
+                {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ],
+            "ordinaryComment": [
+                 {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ]
+        },
+        {
+            "question_id": 3,
+            "answer_id": 3,
+            "selectedComment": [
+                {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ],
+            "ordinaryComment": [
+                 {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 2,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 3,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                },
+                {
+                    "comment_di": 4,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
+                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "good_num": "112",
+                    "comment_num": "18",
+                    "time": "16/06/03"
+                }
+            ]
+        },
+        {
+            "question_id": 4,
+            "answer_id": 4,
+            "selectedComment": [
+                {
+                    "comment_di": 1,
+                    "feed_source_name": "George",
+                    "feed_source_img": "../../images/icon9.jpeg",
                     "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
                     "good_num": "112",
                     "comment_num": "18",
@@ -410,6 +650,8 @@ var next = {
                 }
             ]
         }
+
+        
     ]
 
 }

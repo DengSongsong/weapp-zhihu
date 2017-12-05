@@ -1,31 +1,36 @@
 <!--pages/comment/comment.wxml-->
+
+<!--引入加载更多模版-->
+<import src="../../template/loading" />
+
 <view class="container">
+    <block wx:for="{{comment}}" wx:key="index">
     <scroll-view class="scroll-view" scroll-y="true" bindscrolltolower="lower" bindscrolltoupper="upper" style="height:{{windowHeight}}px">
         <view class="comment-hd">
             <view class="selectedComment">
                 <text>精选评论</text>
             </view>
-            <block>
+            <block wx:for="{{item.selectedComment}}" wx:key="index">
                 <view class="user-comment">
                     <view class="user-avatar">
-                        <image src="../../images/icon1.jpeg"></image>
+                <image src="{{item.feed_source_img}}"></image>
                     </view>
                     <view class="comment-content">
                         <view class="user-name">
-                            <text>白子</text>
+                            <text>{{item.feed_source_name}}</text>
                         </view>
                         <view class="answer-content">
-                            <text>江财江财江财江财江财江财江财江财江财江财江财江财江财江财江财</text>
+                            <text>{{item.content}}</text>
                         </view>
                         <view class="comment-action">
                             <view class="like dot">
-                                <text>点赞 48 </text>
+                                <text>点赞 {{item.good_num}} </text>
                             </view>
                             <view class="reply dot">
                                 <text>回复</text>
                             </view>
                             <view class="time">
-                                <text>16/03/08</text>
+                                <text>{{item.time}}</text>
                             </view>
                         </view>
                     </view>
@@ -36,27 +41,27 @@
             <view class="ordinaryComment">
                 <text>评论</text>
             </view>
-            <block>
+            <block wx:for="{{item.ordinaryComment}}" wx:key="index">
                 <view class="user-comment">
                     <view class="user-avatar">
-                        <image src="../../images/icon1.jpeg"></image>
+                        <image src="{{item.feed_source_img}}"></image>
                     </view>
                     <view class="comment-content">
                         <view class="user-name">
-                            <text>白子</text>
+                            <text>{{item.feed_source_name}}</text>
                         </view>
                         <view class="answer-content">
-                            <text>江财江财江财江财江财江财江财江财江财江财江财江财江财江财江财</text>
+                            <text>{{item.content}}</text>
                         </view>
                         <view class="comment-action">
                             <view class="like dot">
-                                <text>48 点赞</text>
+                                <text>点赞 {{item.good_num}}</text>
                             </view>
                             <view class="comment dot">
-                                <text>回复</text>
+                                <text>回复{{item.comment_num}}</text>
                             </view>
                             <view class="time">
-                                <text>16/03/08</text>
+                                <text>{{item.time}}</text>
                             </view>
                         </view>
                     </view>
@@ -64,12 +69,20 @@
             </block>
         </view>
     </scroll-view>
+      <!--加载更多模版-->
+  <block wx:if="{{isLoading}}">
+    <template is="loading" />
+  </block>
+  <block wx:else>
+    <template is="nodata" />
+  </block>
     <view class="comment-ft">
         <view class="commentInput">
-            <input type="text" placeholder="请输入评论" placeholder-class="placeholderClass" bindinput="" />
+            <input type="text" value="{{content}}" bindinput="onTextChanged" placeholder="请输入评论" placeholder-class="placeholderClass" />
         </view>
         <view class="commentBtn">
-            <text bindtap="">发布</text>
+            <text bindtap="onSendClicked" data-questionId="{{item.question_id}}">发布</text>
         </view>
     </view>
+    </block>
 </view>

@@ -73,7 +73,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*background-color: rebeccapurple;*/
+    background-color: white;
 }
 .comment-ft .commentInput{
     width: 80%;

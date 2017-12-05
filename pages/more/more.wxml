@@ -3,11 +3,11 @@
     <view class="weui-cells personalInfo">
         <view class="weui-cell weui-cell_access">
             <view class="weui-cell__hd">
-                <image src="../../images/icon9.jpeg"></image>
+                <image src="{{userInfo.avatarUrl}}"></image>
             </view>
             <view class="weui-cell__bd personalInfo-content">
                 <view class="personalInfo-name">
-                    <text>叫我松哥</text>
+                    <text>{{userInfo.nickName}}</text>
                 </view>
                 <view class="personalInfo-edit">
                     <text>查看个人主页或编辑简介</text>

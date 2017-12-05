@@ -56,6 +56,7 @@ function getAnswer(){
 function getQuestionDetail(){
   return questionDetail;
 }
+
 module.exports.getData = getData;
 module.exports.getData2 = getData2;
 module.exports.getNext = getNext;
