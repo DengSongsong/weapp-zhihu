@@ -11,29 +11,29 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     personalInfo:{
       first: [{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/create.png',
         'desc': '我的创作'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/collectionFolder.png',
         'desc': '我的收藏'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/follow.png',
         'desc': '我的关注'
       }],
       second: [{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/purchasedContent.png',
         'desc': '已购内容'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/bookshelf.png',
         'desc': '我的书架'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/payConsultation.png',
         'desc': '我的付费咨询'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/balance.png',
         'desc': '我的余额'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/coupon.png',
         'desc': '我的礼券'
       }],
       third: [{

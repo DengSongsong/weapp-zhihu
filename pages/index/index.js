@@ -30,23 +30,23 @@ Page({
     duration: 1000,
     discoveryNavigator: [
       {
-        'navigateImage': '../../images/index_focus.png',
+        'navigateImage': '../../images/answer.png',
         'navigateDesc':'回答'
       },
       {
-        'navigateImage': '../../images/index_focus.png',
+        'navigateImage': '../../images/video.png',
         'navigateDesc':'视频'
       },
       {
-        'navigateImage': '../../images/index_focus.png',
+        'navigateImage': '../../images/specialColumn.png',
         'navigateDesc':'专栏'
       },
       {
-        'navigateImage': '../../images/index_focus.png',
+        'navigateImage': '../../images/collectionFolder.png',
         'navigateDesc':'收藏夹'
       },
       {
-        'navigateImage': '../../images/index_focus.png',
+        'navigateImage': '../../images/roundTable.png',
         'navigateDesc':'圆桌'
       }
     ]
