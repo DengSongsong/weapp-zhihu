@@ -50,7 +50,9 @@
               </view>
               <text>来自话题：{{item.topic}}</text>
             </a>
+            <!--遮罩层-->
             <view class="drawer_screen" bindtap="hide" data-statu="close" wx:if="{{showModalStatus}}"></view>
+            <!--弹窗事件触发-->
             <view bindtap="powerDrawer" data-statu="open" data-answerId="{{item.answer_id}}">
               <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
             </view>
@@ -81,6 +83,7 @@
               </view> 
             </view>
           </view>
+          <!--弹窗页面-->
           <view animation="{{animationData}}" data-answerId="{{item.answer_id}}" class="drawer_box" wx:if="{{showModalStatus&&item.isSelected}}">
             <view class="drawer_shield">屏蔽这个问题</view>
             <view class="drawe_report">举报</view>

@@ -1,7 +1,7 @@
 <!--pages/more/more.wxml-->
 <view class="container">
     <view class="weui-cells personalInfo">
-        <view class="weui-cell weui-cell_access">
+        <navigator class="weui-cell weui-cell_access">
             <view class="weui-cell__hd">
                 <image src="{{userInfo.avatarUrl}}"></image>
             </view>
@@ -14,12 +14,12 @@
                 </view>
             </view>
             <view class="weui-cell__ft"></view>
-        </view>
+        </navigator>
     </view>
     <view class="info-list">
         <view class="weui-cells">
             <block wx:for="{{personalInfo.first}}" wx:key = "index">
-                <view class="weui-cell weui-cell_access">
+                <navigator class="weui-cell weui-cell_access">
                     <view class="weui-cell__hd">
                         <image src="{{item.icon}}"></image>
                     </view>
@@ -27,12 +27,12 @@
                         {{item.desc}}
                     </view>
                     <view class="weui-cell__ft"></view>
-                </view>
+                </navigator>
             </block>
         </view>
         <view class="weui-cells">
             <block wx:for="{{personalInfo.second}}" wx:key = "index">
-                <view class="weui-cell weui-cell_access">
+                <navigator class="weui-cell weui-cell_access">
                     <view class="weui-cell__hd">
                         <image src="{{item.icon}}"></image>
                     </view>
@@ -40,12 +40,12 @@
                         {{item.desc}}
                     </view>
                     <view class="weui-cell__ft"></view>
-                </view>
+                </navigator>
             </block>
         </view>
         <view class="weui-cells">
             <block wx:for="{{personalInfo.third}}" wx:key = "index">
-                <view class="weui-cell weui-cell_access">
+                <navigator class="weui-cell weui-cell_access">
                     <view class="weui-cell__hd">
                         <image src="{{item.icon}}"></image>
                     </view>
@@ -53,24 +53,8 @@
                         {{item.desc}}
                     </view>
                     <view class="weui-cell__ft"></view>
-                </view>
+                </navigator>
             </block>
-        </view>
-        <view class="weui-cells">
-        <view class="weui-cell weui-cell_access">
-                    <view class="weui-cell__hd">
-                        <image src="{{item.icon}}"></image>
-                    </view>
-                    <view class="weui-cell__bd">
-                       <text>夜间模式</text> 
-                    </view>
-                    <view class="weui-cell__ft">
-                        <label for="switchCP" class="weui-switch-cp">
-                            <input id="switchCP" class="weui-switch-cp__input" type="checkbox" checked="checked" />
-                            <div class="weui-switch-cp__box"></div>
-                        </label>
-                    </view>
-        </view>
         </view>
     </view>
 </view>

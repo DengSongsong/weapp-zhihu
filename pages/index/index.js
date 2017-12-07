@@ -64,17 +64,22 @@ Page({
     // console.log(e.currentTarget.dataset.answerid);
     // console.log(e.currentTarget.dataset.questionid);
     console.log(this.data.feed);
+    // 获取数据源
     let feed = this.data.feed;
+    // 得到按钮点击时设置的数据值 data-answerId
     let answer_id = e.currentTarget.dataset.answerid;
     // let question_id = e.currentTarget.dataset.questionid;
+    // 得到按钮点击时设置的数据值 data-statu
     let currentStatu = e.currentTarget.dataset.statu; 
     console.log(111);
     console.log(feed); 
+    // 遍历数据源
     for(let key of feed)  
     {
       if(key.answer_id === answer_id){
         console.log(key.isSelected);
         console.log("sss ");
+        // 
         key.isSelected = true;  
       }
     } 

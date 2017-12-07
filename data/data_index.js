@@ -418,7 +418,7 @@ var next = {
                     "comment_di": 1,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -427,7 +427,7 @@ var next = {
                     "comment_di": 2,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -436,7 +436,7 @@ var next = {
                     "comment_di": 3,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -445,7 +445,7 @@ var next = {
                     "comment_di": 4,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -456,7 +456,7 @@ var next = {
                     "comment_di": 1,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -465,7 +465,7 @@ var next = {
                     "comment_di": 2,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -474,7 +474,7 @@ var next = {
                     "comment_di": 3,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"
@@ -483,7 +483,7 @@ var next = {
                     "comment_di": 4,
                     "feed_source_name": "George",
                     "feed_source_img": "../../images/icon9.jpeg",
-                    "content": "小程序小程序小程序小程序小程序小程序小程序小程序小程序小程序",
+                    "content": "你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀你好呀",
                     "good_num": "112",
                     "comment_num": "18",
                     "time": "16/06/03"

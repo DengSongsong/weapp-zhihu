@@ -37,16 +37,16 @@ Page({
         'desc': '我的礼券'
       }],
       third: [{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/recentlyBrowse.png',
         'desc': '最近浏览'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/nocturnalPattern.png',
         'desc': '夜间模式'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/helpCenter.png',
         'desc': '反馈帮助中心'
       },{
-        'icon': '../../images/icon9.jpeg',
+        'icon': '../../images/setUp.png',
         'desc': '设置'
       }]
     }
